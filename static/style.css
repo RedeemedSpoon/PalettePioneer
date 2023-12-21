@@ -17,6 +17,14 @@ body {
    background-color: #2ab8b4;
    color: #f9f9f9;
 }
+
+.error {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 17px;
+}
+
 header {
    display: flex;
    justify-content: space-between;
@@ -99,16 +107,18 @@ main h1 {
 }
 
 .right {
-   bottom: 9rem;
+   top: 14em;
    right: 1.5rem;
 }
 
 .second {
-   bottom: 37em;
+   bottom: 10rem;
+   right: 1.5rem;
 }
 
 .left::before,
-.right::before {
+.right::before,
+.right_second::before {
    content: "";
    position: absolute;
    width: 40px;
