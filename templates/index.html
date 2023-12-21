@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8" />
+      <title>PalettePioneer</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="Generate color palettes with Images." />
+      <meta name="robots" content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1" />
+      <link rel="icon" href="./assets/icon.png" />
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+      <header class="alt other_font">
+         <a href="index.html">
+            <img src="./assets/logo.png" alt="brand logo" />
+         </a>
+         <div>
+            <p class="info">Privacy Policy</p>
+            <p class="statements">This website is licensed under the Creative Commons Zero (CC0), it does not collect cookies nor does it store any of your data or images</p>
+            <p class="info">About me</p>
+            <p class="statements">I am just a simple developer that has nothing to do with his life except to develop overly popular ideas that solve no issue but still persist for the hobby and learning.</p>
+         </div>
+      </header>
+
+      <main>
+         <h1>Generate a Color Palette Based on Your Image</h1>
+         <div class="chat-bubble left blue">This website is simply amazing! I used it to design &#10; most of my projects, it give me so much inspiration &#10; even as a knowladge person in color theory. &#10; plus it's so easy to use.</div>
+         <div class="chat-bubble right second blue">If you are a designer, there is no way &#10; you ain't gonna use such tools to help you &#10; choose colors that are adequate to your needs.</div>
+         <div class="chat-bubble right right_second green">Even the <a style="color: #e6e6e6" href="https://github.com/RedeemedSpoon/PalettePioneer">code</a> is open source, whatever that means! So you won't fear&#10; that someone stored or stealed your image without your knowledge.</div>
+         <div id="imagecontainer">
+            <label>
+               <img id="previewimage" src="./assets/plus.png" alt="upload image" />
+            </label>
+            <input type="file" id="imageinput" accept="image/*" style="display: none" />
+            <button class="second_alt" id="importbutton">Import Image</button>
+         </div>
+         <p>Go on! The button is just right there, for you!</p>
+      </main>
+
+      <footer class="alt other_font"><p>© {{year}} PalettePioneer. All content on this website is licensed under the Creative Commons Zero (CC0) licensed, feel free to use.</p></footer>
+
+      <script src="script.js"></script>
+   </body>
+</html>
