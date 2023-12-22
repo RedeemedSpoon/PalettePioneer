@@ -18,11 +18,31 @@ body {
    color: #f9f9f9;
 }
 
-.error {
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 2;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+   position: absolute;
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 17px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #eeeeee;
+   font-size: 30px;
+   min-width: 300px;
+   min-height: 75px;
+   padding: 40px;
+   border-radius: 10px;
 }
 
 header {
@@ -160,12 +180,12 @@ main h1 {
    align-items: center;
    width: 300px;
    height: 300px;
-   border: #000000 dashed 4px;
+   border: #131313 dashed 4.5px;
    border-radius: 15px;
    padding: 15px;
    margin: 25px;
-   background-color: #ec7728;
-   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+   background-color: #e4e4e4;
+   box-shadow: 0 7px 6px rgba(0, 0, 0, 0.25);
    transition: 0.3s ease;
 }
 
@@ -177,7 +197,7 @@ main h1 {
 
 #importbutton {
    font-family: monospace;
-   color: #000000;
+   color: #e4e4e4;
    position: absolute;
    bottom: 40px;
    border: none;
@@ -189,14 +209,15 @@ main h1 {
 }
 
 #imagecontainer:hover {
-   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
    cursor: pointer;
-   background-color: rgb(226, 101, 18);
+   background-color: #d62;
    scale: 1.05;
 }
 
 #imagecontainer:hover #importbutton {
    background-color: #08ada8;
+   color: #131313;
 }
 
 #imagecontainer:hover #previewimage {

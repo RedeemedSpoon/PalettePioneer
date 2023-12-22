@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8" />
+      <title>PalettePioneer</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="Generate color palettes with Images." />
+      <meta name="robots" content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1" />
+      <link rel="icon" href="../static/icon.png" />
+      <link rel="stylesheet" type="text/css" href="../static/style.css" />
+   </head>
+   <body>
+      <div id="loadingmodal" class="modal">
+         <div class="modal-content">
+            <span>Analysing</span>
+            <span id="dots"></span>
+         </div>
+      </div>
+      <header class="alt other_font">
+         <a href="{{ url_for('index') }}">
+            <img src="../static/logo.png" alt="brand logo" />
+         </a>
+         <div>
+            <p class="info">Privacy Policy</p>
+            <p class="statements">This website is licensed under the Creative Commons Zero (CC0), it does not collect cookies nor does it store any of your data or images.</p>
+            <p class="info">About me</p>
+            <p class="statements">I am just a simple developer that has nothing to do with his life except to develop overly popular ideas that solve no issue but still persist for the hobby and learning.</p>
+         </div>
+      </header>
+      {% block content %} {% endblock %}
+      <footer class="alt other_font"><p>© {{year}} PalettePioneer. All content on this website is licensed under the Creative Commons Zero (CC0) licensed, feel free to use.</p></footer>
+      <script src="../static/script.js"></script>
+   </body>
+</html>

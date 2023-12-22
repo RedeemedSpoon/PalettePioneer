@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block content %}
+<main>
+   <ol>
+      {% for color in colors %}
+      <li>{{ color }}</li>
+      {% endfor %}
+   </ol>
+</main>
+{% endblock %}
