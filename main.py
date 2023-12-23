@@ -6,11 +6,11 @@ import numpy as np
 import io, base64
 
 app = Flask(__name__)
+date = datetime.now().year
 
 @app.route('/')
 def index():
-    # Get the current year
-    date = datetime.now().year
+    
     return render_template('index.html', year=date)
 
 @app.route('/results', methods=['GET', 'POST'])
@@ -36,7 +36,7 @@ def scan():
             Image.fromarray(image.astype('uint8')).save(buffer, format="PNG")
             img_str = base64.b64encode(buffer.getvalue()).decode('utf-8')
         
-            response = make_response(render_template("results.html", colors=colors, filename=filename, resolution=resolution, image=img_str))
+            response = make_response(render_template("results.html", colors=colors, filename=filename, resolution=resolution, image=img_str, year=date))
             response.headers['Content-Type'] = 'text/html'
             return response
       
