@@ -1,4 +1,4 @@
-![PaletterPioneer Logo](./static/logo.png)
+![PaletterPioneer Logo](./static/logo.svg)
 
 ## Introduction
 
