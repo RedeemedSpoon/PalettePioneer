@@ -1,53 +1,61 @@
 <!doctype html>
 <html lang="en-US">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="keywords" content="color, color theory, palette, color palettes, image, color extraction" />
-      <title>PalettePioneer</title>
-      <meta name="description" content="Generate color palettes with Images." />
-      <meta name="robots" content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1" />
-      <link rel="canonical" href="" />
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="PalettePioneer" />
-      <meta property="og:description" content="Generate color palettes with Images." />
-      <meta property="og:url" content="https://www.PalettePioneer.onrender.com" />
-      <link rel="icon" href="../static/icon.svg" />
-      <link rel="stylesheet" type="text/css" href="../static/style.css" />
-      <meta property="og:site_name" content="Space Exploration" />
-      <meta property="og:image" content="./Assets/logo.svg" />
-      <meta property="og:image:secure_url" content="./Assets/icon.svg" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="660" />
-      <meta name="google-site-verification" content="None" />
-      <meta name="yandex-verification" content="None" />
-      <meta name="generator" content="" />
-      <link rel="apple-touch-icon-precomposed" href="./Assets/icon.svg" />
-      <meta name="msapplication-TileImage" content="./Assets/icon.svg" />
-      <meta name="robots" content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1" />
-   </head>
-   <body>
-      <div id="loadingmodal" class="modal">
-         <div class="modal-content">
-            <span>Analysing</span>
-            <span id="dots"></span>
-         </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="color, color theory, palette, color palettes, image, color extraction" />
+    <title>PalettePioneer</title>
+    <meta name="description" content="Generate color palettes with Images." />
+    <meta name="robots" content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1" />
+    <link rel="canonical" href="" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PalettePioneer" />
+    <meta property="og:description" content="Generate color palettes with Images." />
+    <meta property="og:url" content="https://www.PalettePioneer.onrender.com" />
+    <link rel="icon" href="../static/icon.svg" />
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <meta property="og:site_name" content="Space Exploration" />
+    <meta property="og:image" content="./Assets/logo.svg" />
+    <meta property="og:image:secure_url" content="./Assets/icon.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="660" />
+    <meta name="google-site-verification" content="None" />
+    <meta name="yandex-verification" content="None" />
+    <meta name="generator" content="" />
+    <link rel="apple-touch-icon-precomposed" href="./Assets/icon.svg" />
+    <meta name="msapplication-TileImage" content="./Assets/icon.svg" />
+    <meta name="robots" content="index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1" />
+  </head>
+  <body>
+    <div id="loadingmodal" class="modal">
+      <div class="modal-content">
+        <span>Analysing</span>
+        <span id="dots"></span>
       </div>
-      <header class="alt other_font">
-         <a href="{{ url_for('index') }}">
-            <img src="../static/logo.svg" alt="brand logo" />
-         </a>
-         <div>
-            <p class="info">Privacy Policy</p>
-            <p class="statements">This website is licensed under the Creative Commons Zero (CC0), it does not collect cookies nor does it store any of your data or images.</p>
-            <p class="info">About Me</p>
-            <p class="statements">I am just a simple developer that has nothing to do with his life except to develop overly popular ideas that solve no issue but still persist for the hobby and learning.</p>
-         </div>
-      </header>
-      {% block content %} {% endblock %}
-      <footer class="alt other_font"><p>© {{year}} PalettePioneer. All content on this website is licensed under the Creative Commons Zero (CC0) licensed.</p></footer>
-      <script src="../static/script.js"></script>
-   </body>
+    </div>
+    <header class="alt other_font">
+      <a href="{{ url_for('index') }}">
+        <img src="../static/logo.svg" alt="brand logo" />
+      </a>
+      <div>
+        <p class="info">Privacy Policy</p>
+        <p class="statements">
+          This website is licensed under the Creative Commons Zero (CC0), it does not collect cookies nor does it store
+          any of your data or images.
+        </p>
+        <p class="info">About Me</p>
+        <p class="statements">
+          I am just a simple developer that has nothing to do with his life except to develop overly popular ideas that
+          solve no issue but still persist for the hobby and learning.
+        </p>
+      </div>
+    </header>
+    {% block content %} {% endblock %}
+    <footer class="alt other_font">
+      <p>© {{year}} PalettePioneer.</p>
+    </footer>
+    <script src="../static/script.js"></script>
+  </body>
 </html>

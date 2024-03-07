@@ -1,23 +1,23 @@
 {% extends "base.html" %} {% block content %}
 <main>
-   <div class="image">
-      <h1>{{ filename }}</h1>
-      <img src="data:image/png;base64,{{ image }}" alt="uploaded image" />
-      <h3>{{ resolution }}</h3>
-   </div>
-   <section>
-      <h1>Most Frequent Colors</h1>
-      <div class="colors_palette">
-         {% for color in colors %}
-         <div>
-            <div class="color-div" style="background-color: {{ color }}"></div>
-            <p style="font-size: 20px">{{ color }}</p>
-         </div>
-         {% endfor %}
+  <div class="image">
+    <h1>{{ filename }}</h1>
+    <img src="data:image/png;base64,{{ image }}" alt="uploaded image" />
+    <h3>{{ resolution }}</h3>
+  </div>
+  <section>
+    <h1>Most Frequent Colors</h1>
+    <div class="colors_palette">
+      {% for color in colors %}
+      <div>
+        <div class="color-div" style="background-color: {{ color }}"></div>
+        <p style="font-size: 20px">{{ color }}</p>
       </div>
-      <a href="{{ url_for('index') }}">
-         <button id="importbutton" class="second_alt">Analyse Another</button>
-      </a>
-   </section>
+      {% endfor %}
+    </div>
+    <a href="{{ url_for('index') }}">
+      <button id="importbutton" class="second_alt">Analyse Another</button>
+    </a>
+  </section>
 </main>
 {% endblock %}

@@ -1,20 +1,21 @@
 {% extends "base.html" %} {% block content %}
 <main>
-   <h1>Generate a Color Palette Based on Your Image</h1>
+  <h1>Generate a Color Palette Based on Your Image</h1>
 
-   <div class="chat-bubble left blue">This website is simply amazing! I used it to design &#10; most of my projects, it give me so much inspiration &#10; even as a Knowledgeable person in color theory. &#10; plus it's so easy to use.</div>
-   <div class="chat-bubble right blue">If you are a designer, there is no way you ain't &#10; gonna use such tools to help you choose colors &#10;that are adequate to your needs.</div>
-   <div class="chat-bubble second right_second green">Even the <a style="color: #e6e6e6" href="https://github.com/RedeemedSpoon/PalettePioneer">code</a> is open source, whatever that means! So you won't fear&#10; that someone stored or stealed your image without your knowledge.
-   </div>
-   <form id="uploadForm" action="{{ url_for('scan') }}" method="POST" enctype="multipart/form-data">
-      <div id="imagecontainer">
-         <label for="imageinput">
-            <img id="previewimage" src="../static/plus.png" alt="upload image" />
-         </label>
-         <input type="file" id="imageinput" name="imageinput" accept="image/*" style="display: none" />
-         <button type="button" class="second_alt" id="importbutton">Import Image</button>
-      </div>
-   </form>
-   <p>Go on! The button is just right there, for you!</p>
+  <div class="chat-bubble left blue"> This website is simply amazing! I used it to design &#10; most of my projects, it give me so much inspiration &#10; even as a Knowledgeable person in color theory. &#10; plus it's so easy to use.</div>
+  <div class="chat-bubble right blue"> If you are a designer, there is no way you ain't &#10; gonna use such tools to help you choose colors &#10;that are adequate to your needs.
+  </div>
+  <div class="chat-bubble second right_second green"> Even the <a style="color: #e6e6e6" href="https://github.com/RedeemedSpoon/PalettePioneer">code</a> is open source, whatever that means! So you won't fear&#10; that someone stored or stealed your image without your knowledge.
+  </div>
+  <form id="uploadForm" action="{{ url_for('scan') }}" method="POST" enctype="multipart/form-data">
+    <div id="imagecontainer">
+      <label for="imageinput">
+        <img id="previewimage" src="../static/plus.png" alt="upload image" />
+      </label>
+      <input type="file" id="imageinput" name="imageinput" accept="image/*" style="display: none" />
+      <button type="button" class="second_alt" id="importbutton">Import Image</button>
+    </div>
+  </form>
+  <p>Go on! The button is just right there, for you!</p>
 </main>
 {% endblock %}
