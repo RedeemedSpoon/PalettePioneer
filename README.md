@@ -1,8 +1,8 @@
-![PaletterPioneer Logo](./static/logo.svg)
+![PalettePioneer Logo](./static/logo.svg)
 
 ## Introduction
 
-[PaletterPioneer](https://palettepioneer.onrender.com/) is a web application, designed to generate a 10-color palette from an uploaded image. The generated palette represents the most frequent colors present in the image while ensuring a diverse and aesthetically pleasing range. Whether you're a designer seeking inspiration or just curious about the dominant colors of an image, PaletterPioneer provides a straightforward solution.
+[PalettePioneer](https://palettepioneer.app/) is a web application, designed to generate a 10-color palette from an uploaded image. The generated palette represents the most frequent colors present in the image while ensuring a diverse and aesthetically pleasing range. Whether you're a designer seeking inspiration or just curious about the dominant colors of an image, PalettePioneer provides a straightforward solution.
 
 ## Features
 
@@ -15,11 +15,11 @@
 
 ## Limitations
 
-- **Performance Issues on Limited Resources:** The KMeans clustering algorithm employed for color extraction can be computationally intensive, especially on server with 512MB RAM. This might result in slower processing times or potential timeouts.
+- **Performance Issues on Limited Resources:** The KMeans clustering algorithm employed for color extraction can be computationally intensive, especially on server with 1GB RAM. This might result in slower processing times or potential timeouts.
 
 ## How to Use
 
-1. Navigate to the PaletterPioneer website.
+1. Navigate to the PalettePioneer website.
 2. Click on the upload button to select an image from your device.
 3. After uploading, the system will process the image to extract the 10 most dominant colors.
 4. Once processed, you will be presented with a color palette, along with other details such as image resolution and filename.
@@ -27,5 +27,5 @@
 
 ## Contribution
 
-If you're interested in contributing to PaletterPioneer, feel free to fork the repository, make your changes, and submit a pull request. Your contributions, whether it's bug fixes, feature enhancements, or feedback, are highly appreciated.
+If you're interested in contributing to PalettePioneer, feel free to fork the repository, make your changes, and submit a pull request. Your contributions, whether it's bug fixes, feature enhancements, or feedback, are highly appreciated.
 
